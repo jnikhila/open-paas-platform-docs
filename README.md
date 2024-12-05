@@ -17,10 +17,7 @@ The documentation is deployed and available online. You can access it @ [Open Pa
 To build and view the documentation locally, follow these steps:
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/open-paas-platform-docs.git
-   cd open-paas-platform-docs
-   ```
+   
 2. **Install dependencies**:
     ```bash
     pip install mkdocs mkdocs-material
