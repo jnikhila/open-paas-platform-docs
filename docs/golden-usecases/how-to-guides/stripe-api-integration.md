@@ -68,7 +68,7 @@ After configuring the connector, use it to execute payment-related operations:
         }],
     )
     ```
-4. **Test Your Implementation** by using Stripe’s [test card numbers](https://stripe.com/docs/testing#international-cards) to ensure payments, subscriptions, and error handling work correctly without affecting real accounts.
+4. **Test Your Implementation** by using Stripe’s <a href="https://stripe.com/docs/testing#international-cards" target="_blank"> test card numbers <i class="fa fa-external-link-alt"></i></a> to ensure payments, subscriptions, and error handling work correctly without affecting real accounts.
 
 ## Troubleshooting
 * **Invalid API Key Error:** Ensure you are using the correct keys from the Stripe Dashboard.

@@ -83,6 +83,7 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
 ## Test Your Connector
 
 Now that the connector is ready, you can test it. 
+
 1. Save your connector.py file.
 2. Open your terminal. Run the following command to execute the script:
     ```bash
@@ -104,6 +105,6 @@ Now that the connector is ready, you can test it.
 1. Installed the Python SDK.
 2. Built and tested your first connector.
 
-To explore advanced features, check out our [Advanced SDK Documentation](https://github.com/open-metadata/OpenMetadata).
+To explore advanced features, check out the <a href="https://github.com/open-metadata/OpenMetadata" target="_blank"> Advanced SDK Documentation <i class="fa fa-external-link-alt"></i></a> 
 
 Keep experimenting to master the platform and expand your skills!

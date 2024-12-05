@@ -14,7 +14,7 @@ nav:
           - Real-time Sync: golden-usecases/how-to-guides/real-time-sync.md
           - Automatic Data Processing: golden-usecases/how-to-guides/automatic-data-processing.md
   - References:
-      - Reference Docs: references/reference.md
+      - Overview: references/reference.md
   - Concepts:
       - Connector: concepts/connector.md
 
