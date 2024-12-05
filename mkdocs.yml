@@ -1,0 +1,61 @@
+site_name: Open PaaS Platform Platform-as-a-Service (PaaS) Documentation
+theme: material
+ 
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Quick Start: getting-started/quick-start.md
+  - Golden Use Cases:
+      - Overview: golden-usecases/overview.md
+      - How-to Guides:
+          - Stripe API Integration: golden-usecases/how-to-guides/stripe-api-integration.md
+          - Data Ingestion: golden-usecases/how-to-guides/data-ingestion.md
+          - Real-time Sync: golden-usecases/how-to-guides/real-time-sync.md
+          - Automatic Data Processing: golden-usecases/how-to-guides/automatic-data-processing.md
+  - References:
+      - Reference Docs: references/reference.md
+  - Concepts:
+      - Connector: concepts/connector.md
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - pymdownx.blocks.caption
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - abbr
+  - pymdownx.snippets
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+        custom_fences:
+           - name: mermaid
+             class: mermaid
+             format: !!python/name:pymdownx.superfences.fence_code_format
+      
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+    - css/custom.css
+    - 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'

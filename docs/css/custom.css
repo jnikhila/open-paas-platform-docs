@@ -1,0 +1,7 @@
+.md-typeset blockquote {
+    color: #007ACC; 
+    font-style: italic;
+}
+[dir=ltr] .md-typeset blockquote {
+    border-left: 5px solid #003366;
+}
