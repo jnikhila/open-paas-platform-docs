@@ -1,6 +1,6 @@
-# Integrate Stripe API with Open PaaS Platform Platform
+# Integrate Stripe API with Open PaaS Platform
 
-This guide explains how to integrate Stripe’s API with the Open PaaS Platform Platform. Follow these steps to set up payment processing, manage subscriptions, and leverage Stripe’s features effectively.
+This guide explains how to integrate Stripe’s API with the Open PaaS Platform. Follow these steps to set up payment processing, manage subscriptions, and leverage Stripe’s features effectively.
 
 ---
 
@@ -8,18 +8,17 @@ This guide explains how to integrate Stripe’s API with the Open PaaS Platform 
 
 Ensure you have the following:
 
-- A [Stripe account](https://stripe.com).
+- A <a href="https://stripe.com" target="_blank"> Stripe account <i class="fa fa-external-link-alt"></i></a>
 - Publishable and Secret API Keys from the Stripe Dashboard (**Developers > API Keys**).
-- Access to Open PaaS Platform Platform with the required API integration permissions.
+- Access to Open PaaS Platform with the required API integration permissions.
 - Basic understanding of Stripe APIs, webhooks, and authentication concepts.
-- Basic familiarity with the Open PaaS Platform Platform. If you’re new, start with the [Open PaaS Platform Platform Tutorial](../../getting-started/quick-start.md).
+- Basic familiarity with the Open PaaS Platform. If you’re new, start with the [Open PaaS Platform Tutorial](../../getting-started/quick-start.md).
 - Python 3.x and pip installed in your environment.
 
----
 
 ## Create and Configure a Custom Connector
 
-1. **Create a New Connector in Open PaaS Platform Platform**  
+1. **Create a New Connector in Open PaaS Platform**  
     - Go to **Settings** > **API Integrations**.
     - Select **Create New Connector** and choose **Stripe** from the available options.
 
@@ -33,7 +32,7 @@ Ensure you have the following:
 
 4. **Test Connector Functionality**  
     - Use Stripe’s test keys and [test card numbers](https://stripe.com/docs/testing#international-cards) to simulate API calls.
-    - Verify that requests and responses flow as expected between Open PaaS Platform Platform and Stripe.
+    - Verify that requests and responses flow as expected between Open PaaS Platform and Stripe.
 
 
 ## Implement Payment Processing
@@ -56,7 +55,7 @@ After configuring the connector, use it to execute payment-related operations:
         amount=2000,  # Amount in cents (e.g., $20.00)
         currency='usd',
         customer=customer.id,
-        description='Charge for services on Open PaaS Platform Platform',
+        description='Charge for services on Open PaaS Platform',
     )
     ```
 3. **Handle Recurring Billing** by creatin subscriptions for automated recurring payments:
@@ -69,7 +68,7 @@ After configuring the connector, use it to execute payment-related operations:
         }],
     )
     ```
-4. **Test Your Implementation** by using Stripe’s [test card numbers](https://stripe.com/docs/testing#international-cards) to ensure payments, subscriptions, and error handling work correctly without affecting real accounts.
+4. **Test Your Implementation** by using Stripe’s <a href="https://stripe.com/docs/testing#international-cards" target="_blank"> test card numbers <i class="fa fa-external-link-alt"></i></a> to ensure payments, subscriptions, and error handling work correctly without affecting real accounts.
 
 ## Troubleshooting
 * **Invalid API Key Error:** Ensure you are using the correct keys from the Stripe Dashboard.
@@ -79,4 +78,4 @@ After configuring the connector, use it to execute payment-related operations:
 * **Subscription Not Renewing:** Confirm that the price and customer objects are valid and active.
 
 ## See also
-* [Open PaaS Platform Platform - API References](../../references/reference.md): Explore detailed API specifications for the Open PaaS Platform Platform.
+* [Open PaaS Platform - API References](../../references/reference.md): Explore detailed API specifications for the Open PaaS Platform.
