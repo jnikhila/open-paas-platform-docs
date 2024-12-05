@@ -2,6 +2,7 @@
 
 This page features detailed guides designed for specific, high-impact use cases, helping you seamlessly implement the Open PaaS Platform Platform in diverse scenarios. Whether you’re looking to set up connectors, automate data workflows, or integrate real-time sync, these guides will provide you with step-by-step instructions to build robust, production-ready solutions.
 
+---
 
 With these guides:
 

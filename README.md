@@ -4,7 +4,7 @@ This is a sample documentation repository for a Platform-as-a-Service (PaaS) pro
 
 ## Access Documentation
 
-The documentation is deployed and available online. You can access it @ [Open PaaS Platform Documentation](https://open-paas-platform-docs.vercel.app)
+The documentation is deployed and available online. You can access it @ [Open PaaS Platform Documentation](https://open-paas-platform-docs.vercel.app) 
 
 ## Key Sections
 

@@ -1,6 +1,8 @@
-# Getting Started with the Open PaaS Platform Platform
+# Get Started with the Open PaaS Platform Platform
 
 When integrating external data with the Open PaaS Platform Platform, creating an efficient connector is key. This tutorial will guide you through the process of building a connector using the Python SDK, which allows you to seamlessly ingest data from external sources.
+
+---
 
 !!! tip "In this tutorial, you will:"
     - :man_raising_hand: Set up your environment and install the Python SDK.
@@ -25,7 +27,7 @@ Before building, ensure your environment is ready:
 
 To start interacting with the Open PaaS Platform Platform and ingest data, you need to create a connector. A connector is a component that helps the Open PaaS Platform Platform communicate with external data sources, such as APIs or databases. In this section of the tutorial, you will create a simple connector that ingests data from an external source into the Open PaaS Platform Platform using the Python SDK.
 
-**Understanding the Connector**
+**Understand the Connector**
 
 Before writing the code, let’s first understand what this connector will do:
 	* **Authentication**: It will authenticate the request to the Open PaaS Platform Platform using your API key.
@@ -94,7 +96,6 @@ Now that the connector is ready, you can test it.
 
 > By completing this section, you’ve tested your first connector that ingests data. You can now experiment with this connector and explore ways to enhance it for more complex data ingestion scenarios.
 
----
 
 ## Next Steps
 

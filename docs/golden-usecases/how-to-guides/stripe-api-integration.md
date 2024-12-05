@@ -8,14 +8,13 @@ This guide explains how to integrate Stripe’s API with the Open PaaS Platform 
 
 Ensure you have the following:
 
-- A [Stripe account](https://stripe.com).
+- A <a href="https://stripe.com" target="_blank"> Stripe account <i class="fa fa-external-link-alt"></i></a>
 - Publishable and Secret API Keys from the Stripe Dashboard (**Developers > API Keys**).
 - Access to Open PaaS Platform Platform with the required API integration permissions.
 - Basic understanding of Stripe APIs, webhooks, and authentication concepts.
 - Basic familiarity with the Open PaaS Platform Platform. If you’re new, start with the [Open PaaS Platform Platform Tutorial](../../getting-started/quick-start.md).
 - Python 3.x and pip installed in your environment.
 
----
 
 ## Create and Configure a Custom Connector
 
