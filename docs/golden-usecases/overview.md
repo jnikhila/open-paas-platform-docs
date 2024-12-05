@@ -19,7 +19,7 @@ Explore the following use cases and dive into comprehensive how-to guides tailor
 
     ---
 
-    Learn how to integrate Stripe' Payment Processing API to enhance Open PaaS Platform’s functionality for custom workflows.
+    Learn how to integrate Stripe' Payment Processing API to your Open PaaS Platform.
 
     [:octicons-arrow-right-24: Explore Guide](./how-to-guides/stripe-api-integration.md)
 
