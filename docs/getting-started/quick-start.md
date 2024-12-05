@@ -39,14 +39,14 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
 1. Open Visual Studio Code (VS Code) and create a new Python file named _connector.py_.
 2. Start by importing the Open PaaS PlatformClient class from the SDK. This class allows you to interact with the Open PaaS Platform.
     ```python
-    from Open PaaS Platform_sdk import Open PaaS PlatformClient
+    from OpenPaaSPlatform_sdk import OpenPaaSPlatformClient
     ```
 3. Next, you’ll initialize the Open PaaS PlatformClient by passing your API key. Replace "your_api_key" with your actual API key. This will authenticate your requests to the Open PaaS Platform.
     ```python
     # Initialize the client with your API key
-    client = Open PaaS PlatformClient(api_key="your_api_key")
+    client = OpenPaaSPlatformClient(api_key="your_api_key")
     ```
-4. Now, let’s create the function that will pull data from an external source. In this case, it's `ingest_data`. This function will use the ingest method of the Open PaaS PlatformClient to fetch data from a provided external data source URL.
+4. Now, let’s create the function that will pull data from an external source. In this case, it's `ingest_data`. This function will use the ingest method of the Open PaaS Platform Client to fetch data from a provided external data source URL.
     ```python
     # Ingest data from an external source
     def ingest_data():
@@ -57,14 +57,14 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
 5. Now that we’ve gone through each part of the connector, let’s bring it all together. Below is the complete code for the connector:
 
     ```python
-    from Open PaaS Platform_sdk import Open PaaS PlatformClient #(1)
+    from OpenPaaSPlatform_sdk import OpenPaaSPlatformClient #(1)
 
     # Initialize the client with your API key
-    client = Open PaaS PlatformClient(api_key="your_api_key") #(2)
+    client = OpenPaaSPlatformClient(api_key="sk_test_51Hq7dT2gR4kq9pRxyz12345abcde67890fghij") #(2)
 
     # Ingest data from an external source
     def ingest_data():
-        data = client.ingest("external_data_source_url") #(3)
+        data = client.ingest("https://api.openpaas.com/v1/ingest") #(3)
         return data #(4)
     ```
 
@@ -73,9 +73,9 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
     - **(1)** The Open PaaS Platform_sdk is the library provided by the Open PaaS Platform.
     - **(2)** Open PaaS PlatformClient is the core class within this SDK that enables interaction with the platform’s API. 
         - You use this to manage tasks like authentication and data operations. An instance of the Open PaaS PlatformClient class (here named _client_) is created. 
-        - It is initialized with the provided API key (_your_api_key_). 
+        - It is initialized with the provided API key (_sk_test_51Hq7dT2gR4kq9pRxyz12345abcde67890fghij_). 
         - The API key is essential for authentication and grants access to the platform’s services.
-    - **(3)** `client.ingest`encapsulates the logic for pulling data from an external source using the Open PaaS PlatformClient instance. It interacts with the platform to fetch data from the specified _external_data_source_url_.
+    - **(3)** `client.ingest`encapsulates the logic for pulling data from an external source using the Open PaaS PlatformClient instance. It interacts with the platform to fetch data from the specified `https://api.openpaas.com/v1/ingest`.
     - **(4)** The data fetched from the platform is returned for further use.
 
 > By completing this section, you’ve created your first connector that integrates an external data source with the Open PaaS Platform. You can now test this connector to verify that the data is ingested successfully.
