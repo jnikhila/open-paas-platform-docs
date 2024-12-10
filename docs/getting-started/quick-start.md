@@ -4,7 +4,7 @@ When integrating external data with the Open PaaS Platform, creating an efficien
 
 ---
 
-!!! tip "In this tutorial, you will:"
+!!! tip "In this tutorial, you will learn how to::"
     - :man_raising_hand: Set up your environment and install the Python SDK.
     - :rocket: Create a basic connector to ingest data from an external source.
     - :globe_with_meridians: Use the Python SDK to interact with the Open PaaS Platform.
