@@ -71,9 +71,9 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
 
     In this code:
 
-    - **(1)** The OpenPaaSPlatform_sdk is the library provided by the Open PaaS Platform.
-    - **(2)** OpenPaaSPlatformClient is the core class within this SDK that enables interaction with the platform’s API. 
-        - You use this to manage tasks like authentication and data operations. An instance of the Open PaaS PlatformClient class (here named _client_) is created. 
+    - **(1)** The `OpenPaaSPlatform_sdk` is the library provided by the Open PaaS Platform.
+    - **(2)** `OpenPaaSPlatformClient` is the core class within this SDK that enables interaction with the platform’s API. 
+        - You use this to manage tasks like authentication and data operations. An instance of the `OpenPaaSPlatformClient` class (here named _client_) is created. 
         - It is initialized with the provided API key (_sk_test_51Hq7dT2gR4kq9pRxyz12345abcde67890fghij_). 
         - The API key is essential for authentication and grants access to the platform’s services.
     - **(3)** `client.ingest`encapsulates the logic for pulling data from an external source using the OpenPaaSPlatformClient instance. It interacts with the platform to fetch data from the specified datasource (`https://api.openpaas.com/v1/ingest`).
