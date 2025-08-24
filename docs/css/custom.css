@@ -1,9 +1,265 @@
-.md-typeset blockquote {
-    color: #007ACC; 
-    font-style: italic;
+/* Blue, Green, Orange Color Theme */
+:root {
+  --primary-color: #1e40af;        /* Deep Blue */
+  --secondary-color: #059669;      /* Emerald Green */
+  --accent-color: #ea580c;         /* Vibrant Orange */
+  --success-color: #16a34a;        /* Green */
+  --warning-color: #f97316;        /* Orange */
+  --error-color: #dc2626;          /* Red */
+  --gradient-bg: linear-gradient(135deg, #1e40af 0%, #059669 50%, #ea580c 100%);
+  --code-bg: #f0f9ff;
+  --border-radius: 12px;
+  --shadow-color: rgba(30, 64, 175, 0.1);
 }
-[dir=ltr] .md-typeset blockquote {
-    border-left: 5px solid #003366;
+
+.md-header {
+  background: var(--accent-color) !important;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color) !important;
+}
+
+
+.md-typeset blockquote {
+    background: #fff;
+    border-left: 4px solid var(--accent-color);
+    padding: 0.025rem;
+    margin: 2rem 0;
+    color: var(--primary-color);
+    font-style: italic;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Clean Code Blocks with Subtle Theme Colors */
+.md-typeset pre {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset code {
+    background: #f1f5f9;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--primary-color);
+    border: 1px solid #cbd5e1;
+}
+
+/* Professional Grid Cards with Theme Accents */
+.md-typeset .grid.cards > * {
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 
+        0 2px 8px rgba(30, 64, 175, 0.08),
+        0 1px 4px rgba(5, 150, 105, 0.06),
+        0 0 2px rgba(234, 88, 12, 0.04);
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.md-typeset .grid.cards > *:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 8px 24px rgba(30, 64, 175, 0.12),
+        0 4px 12px rgba(5, 150, 105, 0.08),
+        0 2px 6px rgba(234, 88, 12, 0.06);
+    border-top-color: var(--accent-color);
+}
+
+/* Clean Admonitions with Theme Colors */
+.md-typeset .admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left-width: 4px;
+}
+
+.md-typeset .admonition.tip {
+    border-left-color: var(--secondary-color);
+}
+
+.md-typeset .admonition.warning {
+    border-left-color: var(--accent-color);
+}
+
+.md-typeset .admonition.info {
+    border-left-color: var(--primary-color);
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-stable { background: #dcfce7; color: #166534; }
+.status-beta { background: #fef3c7; color: #92400e; }
+.status-experimental { background: #fce7f3; color: #be185d; }
+
+/* API Endpoint Styling */
+.api-endpoint {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.method-get { border-left: 4px solid var(--success-color); }
+.method-post { border-left: 4px solid var(--primary-color); }
+.method-put { border-left: 4px solid var(--warning-color); }
+.method-delete { border-left: 4px solid var(--error-color); }
+
+/* Dark mode enhancements */
+[data-md-color-scheme="slate"] {
+    --code-bg: #1e293b;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > * {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .api-endpoint {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: #e2e8f0;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    text-align: center;
+    padding: 3rem 2rem 4rem 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.03) 0%, rgba(5, 150, 105, 0.03) 50%, rgba(234, 88, 12, 0.03) 100%);
+    pointer-events: none;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Professional Grid Cards with Theme Accents */
+.md-typeset .grid.cards > * {
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 
+        0 2px 8px rgba(30, 64, 175, 0.08),
+        0 1px 4px rgba(5, 150, 105, 0.06),
+        0 0 2px rgba(234, 88, 12, 0.04);
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.md-typeset .grid.cards > *:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 8px 24px rgba(30, 64, 175, 0.12),
+        0 4px 12px rgba(5, 150, 105, 0.08),
+        0 2px 6px rgba(234, 88, 12, 0.06);
+    border-top-color: var(--accent-color);
+}
+
+/* Colored arrow icons in card links */
+.md-typeset .grid.cards > * a .twemoji {
+    color: var(--accent-color) !important;
+    transition: color 0.2s ease;
+}
+
+.md-typeset .grid.cards > * a:hover .twemoji {
+    color: var(--primary-color) !important;
+}
+
+/* Section Separator with Gradient */
+.section-separator {
+    height: 3px;
+    border: none;
+    background: var(--gradient-bg);
+    margin: 2rem 0;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+/* Diagram Container with Box Shadow */
+.diagram-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 
+        0 4px 12px rgba(30, 64, 175, 0.08),
+        0 2px 6px rgba(5, 150, 105, 0.06),
+        0 1px 3px rgba(234, 88, 12, 0.04);
+    border: 1px solid #f1f5f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.25rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
 }
 
 footer {

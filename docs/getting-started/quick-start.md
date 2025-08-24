@@ -1,6 +1,6 @@
-# Get Started with the Open PaaS Platform
+# Create Your First Connector
 
-When integrating external data with the Open PaaS Platform, creating an efficient connector is key. This tutorial will guide you through the process of building a connector using the Python SDK, which allows you to seamlessly ingest data from external sources.
+This tutorial will guide you through building your first connector using the Open PaaS Platform Python SDK. You'll learn the fundamentals by creating a simple data connector that integrates with an external API.
 
 ---
 
@@ -58,6 +58,7 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
 5. Now that you’ve gone through each part of the connector, let’s bring it all together. Below is the complete code for the connector:
 
     ```python
+
     from OpenPaaSPlatform_sdk import OpenPaaSPlatformClient #(1)
     
     # Initialize the client with your API key
@@ -74,7 +75,7 @@ Now, that you've understood the basics of connector. Let’s build a simple conn
     - **(1)** The OpenPaaSPlatform_sdk is the library provided by the Open PaaS Platform.
     - **(2)** OpenPaaSPlatformClient is the core class within this SDK that enables interaction with the platform’s API. 
         - You use this to manage tasks like authentication and data operations. An instance of the Open PaaS PlatformClient class (here named _client_) is created. 
-        - It is initialized with the provided API key (_sk_test_51Hq7dT2gR4kq9pRxyz12345abcde67890fghij_). 
+        - It is initialized with the provided API key (`_sk_test_51Hq7dT2gR4kq9pRxyz12345abcde67890fghij_`). 
         - The API key is essential for authentication and grants access to the platform’s services.
     - **(3)** `client.ingest`encapsulates the logic for pulling data from an external source using the OpenPaaSPlatformClient instance. It interacts with the platform to fetch data from the specified datasource (`https://api.openpaas.com/v1/ingest`).
     - **(4)** The data fetched from the platform is returned for further use.

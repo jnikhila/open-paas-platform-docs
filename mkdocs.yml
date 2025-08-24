@@ -1,22 +1,24 @@
-site_name: Open Platform-as-a-Service (PaaS) Documentation
+site_name: Open PaaS Platform Documentation
 theme: material
- 
+
+plugins:
+  - awesome-pages
 
 nav:
   - Home: index.md
-  - Getting Started:
+  - Get Started:
       - Quick Start: getting-started/quick-start.md
-  - Golden Use Cases:
-      - Overview: golden-usecases/overview.md
-      - How-to Guides:
-          - Stripe API Integration: golden-usecases/how-to-guides/stripe-api-integration.md
-          - Data Ingestion: golden-usecases/how-to-guides/data-ingestion.md
-          - Real-time Sync: golden-usecases/how-to-guides/real-time-sync.md
-          - Automatic Data Processing: golden-usecases/how-to-guides/automatic-data-processing.md
+  - Integrations:
+      - Stripe Payments: integrations/payments.md
+      - Data Ingestion: integrations/data-ingestion.md
+      - Real-time Sync: integrations/real-time-sync.md
+      - Webhook Processing: integrations/webhooks.md
+  - Core Concepts:
+      - Architecture: concepts/architecture.md
+      - Security Model: concepts/security.md
   - References:
-      - Overview: references/reference.md
-  - Concepts:
-      - Connector: concepts/connector.md
+      - Glossary: references/glossary.md
+  - Troubleshooting: troubleshooting/troubleshooting.md
 
 markdown_extensions:
   - admonition
