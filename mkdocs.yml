@@ -1,9 +1,6 @@
 site_name: Open PaaS Platform Documentation
 theme: material
 
-plugins:
-  - awesome-pages
-
 nav:
   - Home: index.md
   - Get Started:
