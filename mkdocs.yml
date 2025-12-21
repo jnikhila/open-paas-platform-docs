@@ -25,7 +25,6 @@ nav:
 markdown_extensions:
   - admonition
   - md_in_html
-  - pymdownx.blocks.caption
   - footnotes
   - tables
   - toc:
