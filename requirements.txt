@@ -1,1 +1,4 @@
 mkdocs-material==9.5.47
+mkdocs-glightbox==0.3.6
+pymdown-extensions==10.3.0
+mkdocs-mermaid2-plugin==1.1.1
