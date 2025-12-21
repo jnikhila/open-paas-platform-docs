@@ -13,10 +13,10 @@
 }
 
 .md-header {
-  background: var(--accent-color) !important;
+  background: var(--primary-color) !important;
 }
 
-h1, h2, h3 {
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
   color: var(--primary-color) !important;
 }
 
